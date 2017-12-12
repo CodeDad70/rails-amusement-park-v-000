@@ -1,0 +1,21 @@
+<h4>Welcome <%=@user.name%> !</h4>
+
+<%if @message %>
+<%=@message%>
+<%end%>
+
+
+<ul>
+	<li>Mood <%=@user.mood%></li>
+	<li>Tickets: <%=@user.tickets%></li>
+	<li>Height <%=@user.height%></li>
+</ul>
+
+<%if @user.user_admin%>
+
+	<p class = "user_admin">ADMIN</p>
+	<%end%>
+
+	<a href="/attractions"> See attractions </a>
+	
+

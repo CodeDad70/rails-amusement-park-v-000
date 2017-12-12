@@ -1,0 +1,41 @@
+
+	<%= form_for attraction do |f| %>
+
+		<div class="field">
+			<label for="name">Name</label>
+			<br>
+		<%= f.text_field :name%><br>
+		</div>
+
+		<div class="field">
+			<label for="tickets">How many tickets does this ride cost?</label>
+			<br>
+		<%= f.number_field :tickets%><br>
+		</div>
+
+		<div class="field">
+			<label for="nausea_rating">What is the nausea rating? (1-5 scale)</label>
+			<br>
+		<%= f.number_field :nausea_rating, in:1..5%><br>
+		</div>
+
+		<div class="field">
+			<label for="happiness_rating">What is the happiness rating? (1-5 scale)</label>
+			<br>
+		<%= f.number_field :happiness_rating, in:1..5%><br>
+		</div>
+
+		<div class="field">
+			<label for="min_height">What is the min height (in inches)</label>
+			<br>
+		<%= f.number_field :min_height%><br>
+		</div><br>
+
+		<div class="actions">
+
+		<%= f.submit%>
+		</div>
+
+
+<%end%>
+
